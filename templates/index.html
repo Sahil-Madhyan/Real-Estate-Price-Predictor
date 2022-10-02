@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Real Estate Price Predictor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+</head>
+
+<body class="bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="card" style="width: 100%; height: 100%; margin-top: 50px">
+        <div class="card-header" style="text-align: center">
+          <h1>Welcome to Real Estate Price Predictor</h1>
+        </div>
+        <div class="card-body">
+          <form method="post" accept-charset="utf-8" class="form-horizontsm">
+            <div class="row">
+              <div class="row form-group" style="text-align: center">
+                <label class="col-sm-2"><b>Select Location</b></label>
+                <div class="col-md-6 form-group">
+                  <select name="location" id="location" class="selectpicker form-control" required="1">
+                    <option></option>
+                  </select><br />
+                </div>
+              </div>
+              <div class="row form-group" style="text-align: center">
+                <label class="col-sm-2"><b>Enter BHK</b></label>
+                <div class="col-md-6 form-group">
+                  <input type="text" class="form-control" name="bhk" id="bhk" placeholder="Enter BHK" /><br>
+                </div>
+              </div>
+              <div class="row form-group" style="text-align: center">
+                <label class="col-sm-2"><b>Enter Number of bathrooms</b></label>
+                <div class="col-md-6 form-group">
+                  <input type="text" class="form-control" name="bath" id="bath" placeholder="Enter number of bathrooms" /><br>
+                </div>
+                
+              </div>
+              <div class="row form-group" style="text-align: center">
+                <label class="col-sm-2"><b>Enter Square Feet</b></label>
+                <div class="col-md-6 form-group"><input type="text" class="form-control" name="total_sqft"
+                    id="total_sqft" placeholder="Enter Square Feet" />
+                  <br>
+                </div>
+
+              </div>
+              <div class="col-md-12 form-group">
+                <br /><button class="btn btn-primary form-control" onclick="send_data()">
+                  Predict Price
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
