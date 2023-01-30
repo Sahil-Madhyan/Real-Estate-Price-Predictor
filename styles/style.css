@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #212529;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.nav ul {
+  display: flex;
+  list-style-type: none;
+}
+.nav ul li {
+  margin: 2%;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+.nav ul li a:hover {
+  color: red;
+}
+.container {
+  margin: 2% 8%;
+}
+.card {
+  background-color: #fff;
+  padding: 0% 1%;
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0,.125);
+}
+.card-header {
+  background-color: rgba(0, 0, 0, 0.03);
+  text-align: center;
+  padding: 2%;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.card-body {
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  
+}
+.card-body form{
+    min-width: 50%;
+    
+}
+label{
+    text-align: left;
+}
+.row1{
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row1 select{
+    padding: 2%;
+    border: 2px solid rgba(0,0,0,.125);
+    border-radius: 5px;
+    width: 50%;
+}
+.row2{
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row2 input{
+    padding: 2%;
+    border: 2px solid rgba(0,0,0,.125);
+    border-radius: 5px;
+    width: 50%;
+}
+.row3{
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row3 input{
+    padding: 2%;
+    border: 2px solid rgba(0,0,0,.125);
+    border-radius: 5px;
+    width: 50%;
+}
+.row4{
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row4 input{
+    padding: 2%;
+    border: 2px solid rgba(0,0,0,.125);
+    border-radius: 5px;
+    width: 50%;
+    justify-content: space-between;
+}
+.row5 {
+  padding: 3%;
+  text-align: center;
+}
+.row5 button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 2%;
+  font-size: large;
+  border-color:#007bff;
+}
+.row5 button:hover{
+    background-color: #0069d9;
+    border-color: #0062cc;
+    cursor: pointer;
+}
