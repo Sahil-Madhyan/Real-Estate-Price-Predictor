@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import pandas as pd
 
-app = Flask(__name__,template_folder="docs",static_folder="static")
+app = Flask(__name__,template_folder="docs",static_folder="./docs/static")
 data = pd.read_csv("./excel_sheets/Delhi.csv")
 
 
