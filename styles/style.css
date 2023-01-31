@@ -110,6 +110,7 @@ label{
   padding: 2%;
   font-size: large;
   border-color:#007bff;
+  width:50%;
 }
 .row5 button:hover{
     background-color: #0069d9;
