@@ -46,9 +46,6 @@ body {
     min-width: 50%;
     
 }
-label{
-    text-align: left;
-}
 .row1{
     padding: 3%;
     display: flex;
@@ -59,7 +56,7 @@ label{
     padding: 2%;
     border: 2px solid rgba(0,0,0,.125);
     border-radius: 5px;
-    width: 50%;
+    width: 55%;
 }
 .row2{
     padding: 3%;
