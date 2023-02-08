@@ -4,6 +4,8 @@
 }
 body {
   background-color: #212529;
+  background-image:url(https://ci3.googleusercontent.com/proxy/_BkcxEWYxtvELG8t3zWXh0rKLoznM1sjEW5sUR3KGGPWjN0xgQ7TEpnR2wT4GU5LOL5HZp2DCp4XRMYSsMql=s0-d-e1-ft#https://wallpaperaccess.com/full/2926922.jpg);background-repeat:no-repeat;
+  background-size: cover;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .nav ul {
@@ -45,6 +47,18 @@ body {
 .card-body form{
     min-width: 50%;
     
+}
+.row0{
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row0 select{
+    padding: 2%;
+    border: 2px solid rgba(0,0,0,.125);
+    border-radius: 5px;
+    width: 55%;
 }
 .row1{
     padding: 3%;
