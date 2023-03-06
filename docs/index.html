@@ -6,63 +6,76 @@
     <title>Real Estate Price Predictor</title>
     <link rel="shortcut icon" href="./static/assests/real-estate.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="./static/styles/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
   </head>
 
   <body>
     <header>
       <div class="nav">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Map</a></li>
-        </ul>
+        <div class="logo-brand">
+          <img src="./static/assests/real-estate.png" alt="">
+          <h2>Real Estate Cost Predictor</h2>
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href={{url_for("index")}}><i class="fa-solid fa-home"></i>Home</a></li>
+            <li><a href={{url_for("map")}}><i class="fa-solid fa-map"></i>Map</a></li>
+            <li><a href="{{url_for("about")}}"><i class="fa-solid fa-circle-info"></i>About Us</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
       <div class="container">
         <div class="card">
           <div class="card-header">
+            <i class="fa-solid fa-hands-praying"></i>
             <h1>Welcome to Real Estate Cost Prediction</h1>
           </div>
           <div class="card-body">
-            <form action="#" method="post">
+            <form method="post">
               <div class="row0">
-                <label for="citySection">Select City</label>
-                <select id = "citySection">
+                <i class="fa-solid fa-city"></i>
+                <label for="city">Select City</label>
+                <select name="city" id = "city">
                   <option selected disabled>Select City</option>
                   <option>Chennai</option>
                   <option>Delhi</option>
                 </select>
               </div>
               <div class="row1">
-                <label for="locationSection">Select Location</label>
-                <select id="locationSection">
+                <i class="fa-solid fa-location-arrow"></i>
+                <label for="location">Select Location</label>
+                <select name="location" id="location">
                   <option selected disabled>Select Location</option>
-                  {% for location in locations %}
-                    <option value="{{ location }}">{{ location }}</option>
-                  {% endfor%}
-                  
                 </select>
               </div>
               <div class="row2">
+                <i class="fa-solid fa-layer-group"></i></i>
                 <label>Enter BHK</label><br>
                 <input type="text" name="bhk" id="bhk" placeholder="Enter BHK">
               </div>
               <div class="row3">
-                <label>Enter Number of bathrooms</label><br>
-                <input type="text" name="NumberOfBathrooms" id="NOB" placeholder="Enter Number of bathrooms">
+                <i class="fa-solid fa-ruler"></i>
+                <label>Enter Square Feet</label><br>
+                <input type="text" name="total_sqft" id="total_sqft" placeholder="Enter Square Feet">
               </div>
               <div class="row4">
-                <label>Enter Square Feet</label><br>
-                <input type="text" name="EnterSquareFeet" id="ESF" placeholder="Enter Square Feet">
-              </div>
-              <div class="row5">
-                <button type="submit">Predict Price</button>
+                <button type="submit" onclick="send_data()">Predict Price</button>
               </div>
             </form>
+            <br>
+            <div class="row5" style="text-align: center">
+              <h3><span id="prediction"></span></h3>
+            </div>
           </div>
         </div>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <i class="fa-solid fa-copyright"></i>
+      <span>Group 18</span>
+    </footer>
   </body>
+  <script src="./static/scripts/script.js"></script>
 </html>

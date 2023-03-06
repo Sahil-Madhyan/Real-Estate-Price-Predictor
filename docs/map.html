@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+    <link rel="shortcut icon" href="./static/assests/real-estate.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./static/styles/map.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="logo-brand">
+                <img src="./static/assests/real-estate.png" alt="">
+                <h2>Real Estate Cost Predictor</h2>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href={{url_for("index")}}><i class="fa-solid fa-home"></i>Home</a></li>
+                    <li><a href={{url_for("map")}}><i class="fa-solid fa-map"></i>Map</a></li>
+                    <li><a href="{{url_for("about")}}"><i class="fa-solid fa-circle-info"></i>About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="map1">
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1k0MjAeJOjxmYg7jq0RMmhRC4dP1UDzQ&ehbc=2E312F" width="525"
+                    height="510"></iframe>
+            </div>
+            <div class="map2">
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1qLzD-3GaEAWLfEp85G622zafnpX_oiw&ehbc=2E312F" width="525"
+                    height="510"></iframe>
+            </div>
+            <div class="map3">
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1t1gAwHDfwEeF9MUI-u9wbH5md9mdb68&ehbc=2E312F" width="525"
+                    height="510"></iframe>
+            </div>
+            <div class="map4">
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1YVA2NnmaWk2A_MAHqAr2crvSjC7-F7Y&ehbc=2E312F" width="525"
+                    height="510"></iframe>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <i class="fa-solid fa-copyright"></i>
+        <span>Group 18</span>
+    </footer>
+</body>
+</html>

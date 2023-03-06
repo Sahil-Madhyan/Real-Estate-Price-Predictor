@@ -8,19 +8,41 @@ body {
   background-size: cover;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.nav ul {
+.nav{
   display: flex;
-  list-style-type: none;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.nav ul li {
-  margin: 2%;
+.logo-brand{
+  display:flex;
+  color: white;
+  align-items: center;
 }
-.nav ul li a {
+.logo-brand img{
+  width: 5%;
+  padding: 1%;
+}
+.links{
+  display: flex;
+  margin-right: 3rem;
+}
+.links ul {
+  display: flex;
+  list-style-type: none;;
+}
+.links ul li {
+  margin-left: 2rem;
+}
+.links ul  li a {
   text-decoration: none;
   color: white;
 }
-.nav ul li a:hover {
+.links ul li a:hover {
   color: red;
+}
+.links ul li a i{
+  margin-right: 0.5rem;
 }
 .container {
   margin: 2% 8%;
@@ -35,13 +57,21 @@ body {
   background-color: rgba(0, 0, 0, 0.03);
   text-align: center;
   padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.card-header i{
+  margin-right: 1rem;
 }
 .card-body {
   padding: 2%;
   display: flex;
+  align-items: center;
   justify-content: center;
   font-size: large;
+  flex-direction: column;
   
 }
 .card-body form{
@@ -53,6 +83,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.row0 label{
+  margin-right: 3rem;
 }
 .row0 select{
     padding: 2%;
@@ -66,6 +99,9 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+.row1 label{
+  margin-right: 1%;
+}
 .row1 select{
     padding: 2%;
     border: 2px solid rgba(0,0,0,.125);
@@ -77,6 +113,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.row2 label{
+  margin-right: 2rem;
 }
 .row2 input{
     padding: 2%;
@@ -90,30 +129,20 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+.row3 label{
+  margin-left:1rem;
+}
 .row3 input{
     padding: 2%;
     border: 2px solid rgba(0,0,0,.125);
     border-radius: 5px;
     width: 50%;
 }
-.row4{
-    padding: 3%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.row4 input{
-    padding: 2%;
-    border: 2px solid rgba(0,0,0,.125);
-    border-radius: 5px;
-    width: 50%;
-    justify-content: space-between;
-}
-.row5 {
+.row4 {
   padding: 3%;
   text-align: center;
 }
-.row5 button {
+.row4 button {
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -122,9 +151,24 @@ body {
   font-size: large;
   border-color:#007bff;
   width:50%;
+  transition: all 0.5s ease-in-out;
 }
-.row5 button:hover{
+.row4 button:hover{
     background-color: #0069d9;
     border-color: #0062cc;
     cursor: pointer;
+}
+.row5{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+footer i{
+  margin-right: 0.5rem;
 }
