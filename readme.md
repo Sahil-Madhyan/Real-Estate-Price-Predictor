@@ -4,7 +4,7 @@ Real Estate Cost Prediction is a property/home price predictor. Users can estima
 
 ### Authors
 
-[@Sachin Choudhary](https://github.com/Sach-123)
-[@Harsh Karira](https://github.com/Harshkarira)
-[@Siddhant Kodolkar](https://github.com/SiddhantKodolkar)
-[@Sahil Madhyan](https://github.com/Sahil-Madhyan)
+- [@Sachin Choudhary](https://github.com/Sach-123)
+- [@Harsh Karira](https://github.com/Harshkarira)
+- [@Siddhant Kodolkar](https://github.com/SiddhantKodolkar)
+- [@Sahil Madhyan](https://github.com/Sahil-Madhyan)
