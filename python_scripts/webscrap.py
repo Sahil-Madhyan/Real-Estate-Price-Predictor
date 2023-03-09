@@ -15,7 +15,7 @@ pages = np.arange(1, pagesEnter, 1)
 extension = "?page=" #default extension
 x = "&"
 if(x in url):
-    extension = "&page=" #extension if '&' is present in ur
+    extension = "&page=" #extension if '&' is present in url
 for page in pages:
     req = requests.get( url+str(extension)+str(page))  # url of makaan.com
 
