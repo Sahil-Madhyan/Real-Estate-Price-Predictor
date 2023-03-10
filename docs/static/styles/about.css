@@ -48,8 +48,8 @@ body {
 }
 .container {
   margin: 2% 3%;
-  width: auto;
-  height: auto;
+  padding: 2%;
+  height: fit-content;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -58,15 +58,20 @@ body {
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
-.mentor {
-  padding: 2%;
+.about{
+  
+  padding: 3%;
+  margin: 2% 0;
   border-radius: 5px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
   box-sizing: border-box;
-  margin: 0 20rem;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.about ul li{
+  padding: 0.5rem;
 }
 .teams {
   padding: 2%;
@@ -74,12 +79,13 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   box-sizing: border-box;
   gap: 2%;
 }
 .member1 {
-    padding: 2%;
+  padding: 2%;
+  width: 10rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -119,7 +125,7 @@ body {
   transition: all 0.5s ease-in-out;
 }
 .member5 {
-    padding: 2%;
+  padding: 2%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -128,7 +134,20 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.125);
   transition: all 0.5s ease-in-out;
 }
+.profile{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5% 0;
+}
+.profile img{
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+}
 .name {
+  text-align: center;
   font-weight: bold;
   text-transform: uppercase;
   margin: 2%;
@@ -139,30 +158,60 @@ body {
   margin: 2%;
   color: gray;
 }
-.about {
-  margin: 2%;
-}
+
 .member1:hover {
   font-size: larger;
   transition: all 0.5s ease-in-out;
+}
+.member1:hover img{
+  height: 8rem;
+  width: 8rem;
+  transition: all 0.5s ease-in-out;
+  border-radius: 50%;
 }
 .member2:hover {
   font-size: larger;
   transition: all 0.5s ease-in-out;
 }
+.member2:hover img{
+  height: 8rem;
+  width: 8rem;
+  transition: all 0.5s ease-in-out;
+  border-radius: 50%;
+}
 .member3:hover {
   font-size: larger;
   transition: all 0.5s ease-in-out;
+}
+.member3:hover img{
+  height: 8rem;
+  width: 8rem;
+  transition: all 0.5s ease-in-out;
+  border-radius: 50%;
 }
 .member4:hover {
   font-size: larger;
   transition: all 0.5s ease-in-out;
 }
+.member4:hover img{
+  height: 8rem;
+  width: 8rem;
+  transition: all 0.5s ease-in-out;
+  border-radius: 50%;
+}
 .member5:hover {
   font-size: larger;
   transition: all 0.5s ease-in-out;
 }
+.member5:hover img{
+  height: 8rem;
+  width: 8rem;
+  transition: all 0.5s ease-in-out;
+  border-radius: 50%;
+}
 .social-links {
+  padding: 2%;
+  margin-top: 2%;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -175,29 +224,38 @@ body {
 .mail a{
     color: black;
   text-decoration: none;
+  transition: all 0.5s ease-in-out;
 }
 .linked-in {
+  transition: all 0.5s ease-in-out;
+}
+.linked-in a{
+  color: black;
+  text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
 .github {
   transition: all 0.5s ease-in-out;
 }
-.linked-in:hover {
-  color: blue;
+.github a{
+  color: black;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+.linked-in:hover a{
+  color: #0E76A8;
   transition: all 0.5s ease-in-out;
   font-size: xx-large;
 }
-.github:hover {
-  color: blueviolet;
+.github:hover a{
+  color: #264653;
   transition: all 0.5s ease-in-out;
   font-size: xx-large;
 }
-.mail:hover{
+.mail:hover a{
+  color: #E63946;
   transition: all 0.5s ease-in-out;
   font-size: xx-large;
-}
-.mail a:hover{
-    color: red;
 }
 footer {
   display: flex;
@@ -208,4 +266,33 @@ footer {
 }
 footer i {
   margin-right: 0.5rem;
+}
+@media screen and (max-width: 600px) {
+  .container{
+    flex-direction: column;
+  }
+  .about{
+    margin: 1.5rem;
+    padding: 1.5rem;
+  }
+  .teams{
+    flex-direction: column;
+  }
+  .member1{
+    margin: 1.5rem;
+  }
+  .member2{
+    margin: 1.5rem;
+  }
+  .member3{
+    padding: 1.5rem;
+    margin: 1.5rem;
+  }
+  .member4{
+    margin: 1.5rem;
+  }
+  .member5{
+    padding: 1.5rem;
+    margin: 1.5rem;
+  }
 }
