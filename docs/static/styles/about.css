@@ -58,8 +58,7 @@ body {
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
-.about{
-  
+.about {
   padding: 3%;
   margin: 2% 0;
   border-radius: 5px;
@@ -70,7 +69,7 @@ body {
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
-.about ul li{
+.about ul li {
   padding: 0.5rem;
 }
 .teams {
@@ -85,7 +84,6 @@ body {
 }
 .member1 {
   padding: 2%;
-  width: 10rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,7 +93,7 @@ body {
   transition: all 0.5s ease-in-out;
 }
 .member2 {
-    padding: 2%;
+  padding: 2%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,7 +103,7 @@ body {
   transition: all 0.5s ease-in-out;
 }
 .member3 {
-    padding: 2%;
+  padding: 2%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,7 +113,7 @@ body {
   transition: all 0.5s ease-in-out;
 }
 .member4 {
-    padding: 2%;
+  padding: 2%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -134,13 +132,13 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.125);
   transition: all 0.5s ease-in-out;
 }
-.profile{
+.profile {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 5% 0;
 }
-.profile img{
+.profile img {
   height: 5rem;
   width: 5rem;
   border-radius: 50%;
@@ -163,7 +161,7 @@ body {
   font-size: larger;
   transition: all 0.5s ease-in-out;
 }
-.member1:hover img{
+.member1:hover img {
   height: 8rem;
   width: 8rem;
   transition: all 0.5s ease-in-out;
@@ -173,7 +171,7 @@ body {
   font-size: larger;
   transition: all 0.5s ease-in-out;
 }
-.member2:hover img{
+.member2:hover img {
   height: 8rem;
   width: 8rem;
   transition: all 0.5s ease-in-out;
@@ -183,7 +181,7 @@ body {
   font-size: larger;
   transition: all 0.5s ease-in-out;
 }
-.member3:hover img{
+.member3:hover img {
   height: 8rem;
   width: 8rem;
   transition: all 0.5s ease-in-out;
@@ -193,7 +191,7 @@ body {
   font-size: larger;
   transition: all 0.5s ease-in-out;
 }
-.member4:hover img{
+.member4:hover img {
   height: 8rem;
   width: 8rem;
   transition: all 0.5s ease-in-out;
@@ -203,7 +201,7 @@ body {
   font-size: larger;
   transition: all 0.5s ease-in-out;
 }
-.member5:hover img{
+.member5:hover img {
   height: 8rem;
   width: 8rem;
   transition: all 0.5s ease-in-out;
@@ -218,18 +216,18 @@ body {
   font-size: x-large;
   gap: 1rem;
 }
-.mail{
+.mail {
   transition: all 0.5s ease-in-out;
 }
-.mail a{
-    color: black;
+.mail a {
+  color: black;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
 .linked-in {
   transition: all 0.5s ease-in-out;
 }
-.linked-in a{
+.linked-in a {
   color: black;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
@@ -237,23 +235,23 @@ body {
 .github {
   transition: all 0.5s ease-in-out;
 }
-.github a{
+.github a {
   color: black;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
-.linked-in:hover a{
-  color: #0E76A8;
+.linked-in:hover a {
+  color: #0e76a8;
   transition: all 0.5s ease-in-out;
   font-size: xx-large;
 }
-.github:hover a{
+.github:hover a {
   color: #264653;
   transition: all 0.5s ease-in-out;
   font-size: xx-large;
 }
-.mail:hover a{
-  color: #E63946;
+.mail:hover a {
+  color: #e63946;
   transition: all 0.5s ease-in-out;
   font-size: xx-large;
 }
@@ -267,32 +265,32 @@ footer {
 footer i {
   margin-right: 0.5rem;
 }
-@media screen and (max-width: 600px) {
-  .container{
+@media screen and (max-width: 768px) {
+  .nav {
     flex-direction: column;
   }
-  .about{
-    margin: 1.5rem;
-    padding: 1.5rem;
+  .logo-brand img {
+    width: 10%;
   }
-  .teams{
+  .links {
+    margin-right: 0;
+  }
+  .container {
+    margin:5%;
+    padding: 5%;
+  }
+  .about {
     flex-direction: column;
+    text-align: justify;
+    text-justify: inter-word;
   }
-  .member1{
-    margin: 1.5rem;
+  .about ul li {
+    padding: 0.5rem;
+    list-style-type: none;
   }
-  .member2{
-    margin: 1.5rem;
-  }
-  .member3{
-    padding: 1.5rem;
-    margin: 1.5rem;
-  }
-  .member4{
-    margin: 1.5rem;
-  }
-  .member5{
-    padding: 1.5rem;
-    margin: 1.5rem;
+  .teams {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:2%;
   }
 }
