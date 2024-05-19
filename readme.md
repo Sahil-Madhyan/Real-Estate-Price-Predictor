@@ -1,4 +1,3 @@
-
 # :house_with_garden: Real Estate Cost Prediction
 
 ![Real Estate Image](https://github.com/Sahil-Madhyan/Real-Estate-Price-Predictor/blob/main/assests/real%20estate.jpg)
@@ -9,20 +8,26 @@ Our project's motivation is to help users choose homes and real estate using our
 
 The project aims to estimate real estate sale prices based on a range of economic factors and create an algorithm that can predict house values based on particular input features. We are using machine learning and artificial intelligence approaches.
 
-
 1. Clone the repository
+
 ```bash
 git clone https://github.com/Sahil-Madhyan/Real-Estate-Price-Predictor.git
 ```
+
 2. Navigate to the project directory
+
 ```bash
 cd real-estate-cost-prediction
 ```
+
 3. Install the required dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
+
 4. Run the application
+
 ```bash
 python main.py
 ```
